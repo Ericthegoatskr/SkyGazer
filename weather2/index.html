@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天氣查詢系統</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌤️天氣查詢</h1>
+        </header>
+        <main>
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="輸入城市名稱">
+                <button onclick="searchWeather()">🔍 查詢天氣</button>
+                <button onclick="getUserLocation()">📍 使用我的位置</button>
+            </div>
+            <div class="weather-display">
+                <div id="weatherResult"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

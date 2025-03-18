@@ -1,0 +1,153 @@
+/* 讓整體畫面更具卡通感 */
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #87CEEB, #fef9d7); /* 天空藍到淡黃色 */
+    overflow: hidden;
+}
+
+/* 添加動畫雲 */
+@keyframes moveClouds {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -1000px 0;
+    }
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* 淡入動畫 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* 標題設計 */
+h1 {
+    font-size: 30px;
+    color: #ff6f61;
+    text-shadow: 2px 2px 0px #fff;
+}
+
+/* 搜尋框 */
+.search-box {
+    margin: 20px 0;
+}
+
+#cityInput {
+    padding: 12px;
+    width: 250px;
+    border: 2px solid #ffab00;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+#cityInput:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.5);
+}
+
+/* 按鈕樣式 */
+button {
+    background: #ffab00;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #ff6f61;
+    transform: scale(1.1);
+}
+
+/* 讓天氣結果區塊可滾動 */
+.weather-display {
+    margin-top: 20px;
+    max-height: 400px;  /* 設定最大高度，避免內容溢出 */
+    overflow-y: auto;  /* 啟用垂直滾動條 */
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8); /* 半透明背景，增加可讀性 */
+}
+
+/* 美化滾動條 */
+.weather-display::-webkit-scrollbar {
+    width: 8px;  /* 滾動條寬度 */
+}
+
+.weather-display::-webkit-scrollbar-track {
+    background: #f1f1f1; /* 滾動條背景 */
+    border-radius: 10px;
+}
+
+.weather-display::-webkit-scrollbar-thumb {
+    background: #ffab00; /* 滾動條顏色 */
+    border-radius: 10px;
+}
+
+.weather-display::-webkit-scrollbar-thumb:hover {
+    background: #ff6f61; /* 滑鼠懸停時改變顏色 */
+}
+
+
+#weatherResult {
+    background: #fce4ec; /* 淡粉紅 */
+    padding: 20px;
+    border-radius: 20px;
+    color: #444;
+    font-size: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: popUp 0.5s ease-in-out;
+}
+
+/* 彈出動畫 */
+@keyframes popUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* 雲朵背景 */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: url('tt.jpeg'); /* 雲朵圖片 */
+    opacity: 0.5;
+    animation: moveClouds 30s linear infinite;
+}
