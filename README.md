@@ -17,3 +17,16 @@ SkyGazer 是一款擁有可愛卡通風格介面的天氣查詢應用，提供�
 
 🌈 線上體驗
 👉 點我立即體驗 [SkyGazer](https://ericthegoatskr.github.io/SkyGazer/weather2/)
+
+📥 安裝與使用方式
+下載或克隆專案：
+
+bash
+git clone https://github.com/Ericthegoatskr/SkyGazer.git
+進入專案資料夾：
+
+bash
+cd SkyGazer/weather2
+打開 index.html：
+可使用瀏覽器直接開啟，或在 VS Code 中使用 Live Server。
+
