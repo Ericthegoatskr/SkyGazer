@@ -16,4 +16,4 @@ SkyGazer 是一款擁有可愛卡通風格介面的天氣查詢應用，提供�
 ✅ 背景可自訂：支援自訂圖片或影片作為背景
 
 🌈 線上體驗
-👉 點我立即體驗 SkyGazer
+👉 點我立即體驗 [SkyGazer](https://ericthegoatskr.github.io/SkyGazer/weather2/)
