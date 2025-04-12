@@ -16,4 +16,90 @@
 - Customizable background image or video 🎬
 - Fun cartoon-style animations 🌈
 
+---
+
+## 🌈 Demo
+
+Experience SkyGazer live: [SkyGazer Demo](https://ericthegoatskr.github.io/SkyGazer/weather2/)
+
+---
+
+## 🛠️ Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Ericthegoatskr/SkyGazer.git
+   ```
+
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd SkyGazer/weather2
+   ```
+
+3. **Open `index.html` in Your Browser**:  
+   Simply double-click the file, or use Live Server in VS Code.
+
+---
+
+## ⚙️ Configuration
+
+### 🔑 API Key
+
+SkyGazer uses the [OpenWeatherMap API](https://openweathermap.org/api).  
+Replace the placeholder API key in `script.js`:
+
+```javascript
+const apiKey = 'YOUR_API_KEY_HERE';
+```
+
+---
+
+### 🎨 Custom Backgrounds
+
+To set a custom background image, modify your CSS in `styles.css`:
+
+```css
+body {
+    background: url('path_to_your_image.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+```
+
+To use video, insert a `<video>` element in your HTML and apply `object-fit: cover` via CSS.
+
+---
+
+## 📂 Project Structure
+
+```
+SkyGazer/
+├── weather2/
+│   ├── index.html
+│   ├── styles.css
+│   └── script.js
+├── LICENSE
+└── README.md
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the [Apache-2.0 License](https://github.com/Ericthegoatskr/SkyGazer/blob/main/LICENSE).
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!  
+Feel free to fork the repo and submit pull requests.  
+For major changes, open an issue first to discuss what you’d like to do.
+
+---
+
+## 📬 Contact
+
+Have questions or feedback?  
+Open an issue on the [GitHub repository](https://github.com/Ericthegoatskr/SkyGazer/issues).
+
 ...
