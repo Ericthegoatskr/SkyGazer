@@ -44,11 +44,15 @@
 
 ### ✅ 設定 OpenWeatherMap API 金鑰
 
-請至 [OpenWeatherMap](https://openweathermap.org/api) 免費註冊帳號並取得 API 金鑰，然後將 `script.js` 中的金鑰替換為你的：
+請至 [OpenWeatherMap](https://openweathermap.org/api) 免費註冊帳號並取得 API 金鑰，然後複製 `weather2/config.example.js` 為 `weather2/config.js` 並填入金鑰：
 
-```javascript
-const apiKey = 'YOUR_API_KEY_HERE';
+```bash
+cp weather2/config.example.js weather2/config.js
+# 編輯 config.js 填入你的 API 金鑰
 ```
+`config.js` 已加入 `.gitignore`，避免金鑰被提交。
+或者，在載入 `script.js` 之前，於網頁中設定全域變數
+`OPENWEATHER_API_KEY` 也可以提供金鑰。
 
 ---
 
