@@ -1,5 +1,6 @@
+const apiKey = window.OPENWEATHER_API_KEY || 'YOUR_API_KEY_HERE';
+
 async function fetchWeather(city) {
-    const apiKey = 'c78dd20685b312a1af9282c7c5dee61d';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=zh_tw`;
 
     try {
@@ -13,7 +14,6 @@ async function fetchWeather(city) {
 }
 
 async function fetchForecast(city) {
-    const apiKey = 'c78dd20685b312a1af9282c7c5dee61d';
     const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric&lang=zh_tw`;
 
     try {
@@ -86,7 +86,6 @@ function getUserLocation() {
 }
 
 async function fetchWeatherByLocation(lat, lon) {
-    const apiKey = 'c78dd20685b312a1af9282c7c5dee61d';
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&lang=zh_tw`;
 
     try {
