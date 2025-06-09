@@ -45,12 +45,17 @@ Experience SkyGazer live: [SkyGazer Demo](https://ericthegoatskr.github.io/SkyGa
 
 ### 🔑 API Key
 
-SkyGazer uses the [OpenWeatherMap API](https://openweathermap.org/api).  
-Replace the placeholder API key in `script.js`:
+SkyGazer uses the [OpenWeatherMap API](https://openweathermap.org/api).
+Copy `weather2/config.example.js` to `weather2/config.js` and replace the
+placeholder key:
 
-```javascript
-const apiKey = 'YOUR_API_KEY_HERE';
+```bash
+cp weather2/config.example.js weather2/config.js
+# Edit config.js and insert your API key
 ```
+`config.js` is listed in `.gitignore` so your key won't be committed.
+Alternatively, set `OPENWEATHER_API_KEY` as a global variable before loading
+`script.js`.
 
 ---
 
